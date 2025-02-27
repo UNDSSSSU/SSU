@@ -25,8 +25,7 @@
             display: flex;
         }
         .sidebar {
-            width: 200px;
-            background-color: beige;
+            width: 250px;
             padding: 20px;
             display: flex;
             flex-direction: column;
@@ -34,18 +33,26 @@
         }
         .nav-link {
             display: block;
-            background-color: beige;
-            color: white;
             text-decoration: none;
-            padding: 10px;
+            padding: 15px;
             margin: 5px 0;
             font-weight: bold;
             width: 100%;
-            text-align: left;
+            text-align: center;
             border-radius: 5px;
+            color: white;
+        }
+        .national-security {
+            background-color: #8B0000; /* Dark Red */
+        }
+        .rental-vehicle {
+            background-color: #006400; /* Dark Green */
+        }
+        .faqs {
+            background-color: #00008B; /* Dark Blue */
         }
         .nav-link:hover {
-            background-color: #d8c3a5;
+            opacity: 0.8;
         }
         .content {
             flex: 1;
@@ -65,9 +72,9 @@
     
     <div class="container">
         <div class="sidebar">
-            <a class="nav-link" href="https://github.com/UNDSSSSU/SSU/blob/main/HI%20LEVEL%20%20SECURITY%20PASSES%20(UNGA).pdf" target="_blank">National Security</a>
-            <a class="nav-link" href="https://github.com/UNDSSSSU/SSU/blob/main/HI%20LEVEL%20%20VEHICLE%20DECALS%20(UNGA).pdf" target="_blank">Rental Vehicle</a>
-            <a class="nav-link" href="https://github.com/UNDSSSSU/SSU/blob/main/FAQs.pdf" target="_blank">Frequently Asked Questions</a>
+            <a class="nav-link national-security" href="https://github.com/UNDSSSSU/SSU/blob/main/HI%20LEVEL%20%20SECURITY%20PASSES%20(UNGA).pdf" target="_blank">National Security</a>
+            <a class="nav-link rental-vehicle" href="https://github.com/UNDSSSSU/SSU/blob/main/HI%20LEVEL%20%20VEHICLE%20DECALS%20(UNGA).pdf" target="_blank">Rental Vehicle</a>
+            <a class="nav-link faqs" href="https://github.com/UNDSSSSU/SSU/blob/main/FAQs.pdf" target="_blank">Frequently Asked Questions</a>
         </div>
         
         <div class="content">
@@ -83,3 +90,4 @@
     </div>
 </body>
 </html>
+   

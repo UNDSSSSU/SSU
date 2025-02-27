@@ -8,32 +8,48 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: white;
+            background-color: blue;
+            color: white;
             text-align: center;
         }
         .header {
             width: 100%;
-            background-color: white;
+            background-color: blue;
             padding: 10px 0;
         }
         .header img {
             max-width: 100%;
             height: auto;
         }
-        .nav {
-            list-style: none;
-            padding: 0;
+        .container {
             display: flex;
-            justify-content: center;
-            gap: 15px;
         }
-        .nav-item {
-            display: inline;
+        .sidebar {
+            width: 200px;
+            background-color: beige;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
         }
         .nav-link {
+            display: block;
+            background-color: beige;
+            color: white;
             text-decoration: none;
-            color: blue;
+            padding: 10px;
+            margin: 5px 0;
             font-weight: bold;
+            width: 100%;
+            text-align: left;
+            border-radius: 5px;
+        }
+        .nav-link:hover {
+            background-color: #d8c3a5;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
         }
         .footer {
             margin-top: 20px;
@@ -46,28 +62,24 @@
     </div>
     <h1>Welcome to the UN Department of Safety and Security Special Services Unit</h1>
     <p>Providing safety and security for United Nations personnel and assets.</p>
+    
     <div class="container">
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link" href="https://github.com/UNDSSSSU/SSU/blob/main/HI%20LEVEL%20%20SECURITY%20PASSES%20(UNGA).pdf" target="_blank">National Security</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://github.com/UNDSSSSU/SSU/blob/main/HI%20LEVEL%20%20VEHICLE%20DECALS%20(UNGA).pdf" target="_blank">Rental Vehicle</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://github.com/UNDSSSSU/SSU/blob/main/FAQs.pdf" target="_blank">Frequently Asked Questions</a>
-            </li>
-        </ul>
+        <div class="sidebar">
+            <a class="nav-link" href="https://github.com/UNDSSSSU/SSU/blob/main/HI%20LEVEL%20%20SECURITY%20PASSES%20(UNGA).pdf" target="_blank">National Security</a>
+            <a class="nav-link" href="https://github.com/UNDSSSSU/SSU/blob/main/HI%20LEVEL%20%20VEHICLE%20DECALS%20(UNGA).pdf" target="_blank">Rental Vehicle</a>
+            <a class="nav-link" href="https://github.com/UNDSSSSU/SSU/blob/main/FAQs.pdf" target="_blank">Frequently Asked Questions</a>
+        </div>
+        
+        <div class="content">
+            <p>The Special Services Unit (SSU) provides security coverage for HOS/HOG, Monarchs, Foreign Ministers, Senior UN Officials, and Celebrities.</p>
+            <p>The Unit communicates with the Host-Country to remain aware of any threats or demonstrations that could affect the security and safety of the United Nations.</p>
+            <p>SSU approves requests for temporary Security Grounds Passes for security components escorting VIPs, Dignitaries visiting the UN and handles the collection and delivery of petitions addressed to the Secretary-General.</p>
+            <a href="https://www.un.org/safety-and-security/en" class="btn btn-primary" target="_blank">Learn More</a>
+        </div>
     </div>
-    <div class="container content">
-        <p>The Special Services Unit (SSU) provides security coverage for HOS/HOG, Monarchs, Foreign Ministers, Senior UN Officials, and Celebrities.</p>
-        <p>The Unit communicates with the Host-Country to remain aware of any threats or demonstrations that could affect the security and safety of the United Nations.</p>
-        <p>SSU approves requests for temporary Security Grounds Passes for security components escorting VIPs, Dignitaries visiting the UN and handles the collection and delivery of petitions addressed to the Secretary-General.</p>
-        <a href="https://www.un.org/safety-and-security/en" class="btn btn-primary" target="_blank">Learn More</a>
-    </div>
+    
     <div class="footer">
-        <p>Contact: <a href="mailto:security-unhq-specialservices@un.org">security-unhq-specialservices@un.org</a></p>
+        <p>Contact: <a href="mailto:security-unhq-specialservices@un.org" style="color: white;">security-unhq-specialservices@un.org</a></p>
     </div>
 </body>
 </html>
-
